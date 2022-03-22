@@ -1,0 +1,27 @@
+{
+  "name": "fieb-sesi-layout",
+  "version": "1.0.0",
+  "description": "Refatoração do Layout.css utilizado na FIEB",
+  "main": "dist/layout-v2.css",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:css": "sass src/main.scss dist/layout-v2.css --watch",
+    "dev:livereload": "livereload dist",
+    "dev:serve": "serve dist",
+    "build": "sass src/main.scss dist/layout-v2.css"
+  },
+  "author": "Pedro Bernardo <pedro@mbsconsulting.com.br>",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4",
+    "livereload": "^0.9.3",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.9",
+    "serve": "^13.0.2"
+  },
+  "dependencies": {
+    "maestro-ui": "^0.8.0"
+  }
+}
