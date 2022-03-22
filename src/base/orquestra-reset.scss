@@ -1,0 +1,76 @@
+input,
+button,
+select,
+textarea,
+.btn-group > .btn,
+.btn-group > .dropdown-menu,
+.btn-group > .popover {
+  font-size: $form-ctrl-font-size !important; // @override global.css
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: $font-family;
+}
+
+footer {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+address {
+  margin-bottom: 0;
+  line-height: inherit;
+}
+
+label {
+  font-size: $font-base !important; // @override global.css
+}
+
+select,
+input[type=text],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel] {
+  height: $form-ctrl-height;
+}
+
+textarea,
+select,
+input[type=text],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel] {
+  border: 1px solid $color-grey-300;
+  box-shadow: none;
+  transition: $form-ctrl-transition;
+
+  &:focus:required:invalid:focus, // @override global.css
+  &:focus {
+    outline: 0 !important; // @override important
+    box-shadow: $form-ctrl-focus-shadow !important; // @override important
+    border: $form-ctrl-focus-border !important; // @override important
+  }
+}

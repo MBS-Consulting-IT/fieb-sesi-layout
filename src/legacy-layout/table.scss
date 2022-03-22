@@ -1,0 +1,39 @@
+.form-table {
+  width: 100%;
+  border: none;
+
+  tr {
+    border-right: none;
+    background-color: transparent;
+
+    &:not(:last-child) td {
+      border-bottom: 1px solid $color-grey-200;
+    }
+
+    &.header {
+      border-bottom: 1px solid $color-grey-200;
+
+      th, td {
+        padding: 8px 10px;
+        background: $color-grey-0;
+        border: none;
+      }
+    }
+  }
+
+  td {
+    padding: 12px 10px 8px 10px;
+    vertical-align: middle;
+    border: none;
+
+    .line { padding: 2px 18px 2px 2px; }
+  }
+
+  th {
+    font-weight: $font-bold;
+    font-size: $font-m;
+    color: $color-grey-600;
+    vertical-align: middle;
+    text-align: left;
+  }
+}

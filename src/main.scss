@@ -1,0 +1,21 @@
+/// Somente exibe o formulário após o carregamento do layout.js
+#BoxFrmExecute {
+  // visibility: hidden;
+}
+
+@import "../node_modules/maestro-ui/src/styles/helpers/all";
+@import "../node_modules/maestro-ui/src/styles/base/reset.scss";
+@import "../node_modules/maestro-ui/src/styles/elements/button.scss";
+
+@import "base/orquestra-layout.scss";
+@import "base/orquestra-reset.scss";
+
+@import "legacy-layout/grid.scss";
+@import "legacy-layout/collapse.scss";
+@import "legacy-layout/form.scss";
+@import "legacy-layout/table.scss";
+@import "legacy-layout/radio.scss";
+@import "legacy-layout/checkbox.scss";
+
+
+

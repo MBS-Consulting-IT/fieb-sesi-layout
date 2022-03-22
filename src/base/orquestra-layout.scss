@@ -1,0 +1,133 @@
+/// Container max-width
+$container-max-width: 1124px;
+
+///
+/// Remove o estilo dos descritivos do processo e tarefa
+///
+.content {
+  .well {
+    color: $color-grey-600;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+}
+
+///
+/// Redefine o tamanho e espaçamento da foto do usuário nos dados do requisitante
+///
+#RequesterInfo {
+  .user-photo {
+    width: 44px;
+    height: 44px;
+    margin-right: $space-4;
+  }
+
+  .user-content {
+    padding-top: $space-1;
+  }
+}
+
+///
+/// Oculta o título "Formulário" do container de formulário da tarefa
+/// e remove os estilos do container (bordas e fundo)
+///
+#ContainerForm {
+  background-color: transparent;
+  border: none;
+
+  .box-header {
+    display: none;
+  }
+
+  #BoxFrmExecute {
+    padding: $space-4 0;
+  }
+}
+
+///
+/// Torna o estilo da página de tarefas mais minimalista
+///
+.box {
+  border: 1px solid $color-grey-200;
+
+  .box-header {
+    padding: 6px 18px;
+
+    h2 {
+      margin: 0;
+      font-size: $font-lg;
+    }
+  }
+}
+
+.lateral-col {
+  display: none !important;
+}
+
+.main-col {
+  width: 100% !important;
+}
+
+#frm {
+  margin: 0;
+}
+
+#frm > .title {
+  border-bottom: none;
+}
+
+.flow-title {
+  text-shadow: none;
+}
+
+#frm > .content {
+  margin-bottom: 64px;
+  border-top: 1px solid $color-grey-200;
+}
+
+#frm > .title,
+#frm > .content > .well:first-of-type,
+.main-col,
+.buttons-col .box {
+  max-width: $container-max-width;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: initial !important;
+}
+
+///
+/// Fixa a  barra de finalização com os botões de conclusão
+///
+.buttons-col {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100% !important;
+  margin: 0;
+  background-color: #fff;
+  border-top: 1px solid $color-grey-200;
+  z-index: 3;
+  padding: $space-1;
+  box-shadow:
+    0 -2px 4px 1px rgba(0,0,0,.025),
+    0 -1px 1px 0 rgba(0,0,0,.025);
+
+  .box {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+
+    .box-header { display: none; }
+  }
+
+  #controllers {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    > .well.small {
+      display: none;
+    }
+  }
+}
