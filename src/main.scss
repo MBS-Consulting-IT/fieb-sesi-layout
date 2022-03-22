@@ -1,9 +1,6 @@
-/// Somente exibe o formulário após o carregamento do layout.js
-#BoxFrmExecute {
-  // visibility: hidden;
-}
-
-@import "../node_modules/maestro-ui/src/styles/helpers/all";
+@import "../node_modules/maestro-ui/src/styles/helpers/variables.scss";
+@import "../node_modules/maestro-ui/src/styles/helpers/animations.scss";
+@import "../node_modules/maestro-ui/src/styles/helpers/mixins.scss";
 @import "../node_modules/maestro-ui/src/styles/base/reset.scss";
 @import "../node_modules/maestro-ui/src/styles/elements/button.scss";
 
@@ -17,5 +14,14 @@
 @import "legacy-layout/radio.scss";
 @import "legacy-layout/checkbox.scss";
 
+/// Somente exibe o formulário após o carregamento do layout.js
+#BoxFrmExecute {
+  &:not(.-loaded) {
+    @include paneLoader;
+    min-height: 424px;
 
-
+    &::before {
+      content: "Carregando...";
+    }
+  }
+}
