@@ -30,8 +30,5 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-# distribution folder
-dist
-
 # todo lists
 TODO*.md
