@@ -1,4 +1,4 @@
-[![](https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layou/badge)](https://www.jsdelivr.com/package/gh/pedbernardo/orquestra-utils)
+[![](https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout/badge)](https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout)
 
 # FIEB-SESI Layout
 
@@ -8,11 +8,11 @@ Refatoração do CSS base para os projetos da FIEB com utilização do `layout.j
 
 ### Utilização
 ```html
-<script src="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@1.0.0/dist/layout-v2.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@1.1.0/dist/layout-v2.css"></script>
 
 <!-- minificado -->
 
-<script src="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@1.0.0/dist/layout-v2.min.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@1.1.0/dist/layout-v2.min.css"></script>
 ```
 
 <br>
