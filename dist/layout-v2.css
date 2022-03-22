@@ -885,15 +885,14 @@ div[xid] {
 
 #BoxFrmExecute:not(.-loaded) {
   position: relative;
-  min-height: 224px;
-  margin-top: 0;
   min-height: 424px;
+  margin-top: 0;
 }
-#BoxFrmExecute:not(.-loaded) * {
+#BoxFrmExecute:not(.-loaded) > * {
   display: none;
 }
 #BoxFrmExecute:not(.-loaded)::before {
-  content: attr(data-loading);
+  content: "Carregando...";
   top: calc(50% + 12px);
   left: 0;
   width: 100%;
@@ -915,9 +914,6 @@ div[xid] {
   border-right-color: transparent;
   border-top-color: transparent;
   animation: spin-around 0.5s infinite linear;
-}
-#BoxFrmExecute:not(.-loaded)::before {
-  content: "Carregando...";
 }
 
 /*# sourceMappingURL=layout-v2.css.map */
