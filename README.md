@@ -8,11 +8,11 @@ Refatoração do CSS base para os projetos da FIEB com utilização do `layout.j
 
 ### Utilização
 ```html
-<script src="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@latest/dist/layout-v2.css"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@latest/dist/layout-v2.css">
 
 <!-- minificado -->
 
-<script src="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@latest/dist/layout-v2.min.css"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MBS-Consulting-IT/fieb-sesi-layout@latest/dist/layout-v2.min.css">
 ```
 
 <br>
